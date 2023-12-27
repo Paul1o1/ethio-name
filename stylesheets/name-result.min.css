@@ -1,0 +1,148 @@
+.result-card {
+    border: 1px solid rgba(255,255,255,.4);
+    box-sizing: border-box;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.result-card__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    word-break: break-all;
+    min-height: 350px
+}
+
+.result-card__image--rendered {
+    width: 530px;
+    height: 530px
+}
+
+.result-card__image__wrapper {
+    width: 1030px;
+    display: flex;
+    justify-content: center
+}
+
+.result-card__name {
+    padding-bottom: 20px
+}
+
+.result-card__hieroglyphs {
+    color: #fff;
+    word-break: break-all;
+    font-size: 58px;
+    line-height: 110%;
+    padding-bottom: 20px
+}
+
+.result-card__spelling {
+    margin-bottom: 10px;
+    word-break: break-all
+}
+
+.result-card__transcription {
+    text-transform: capitalize;
+    font-size: 48px;
+    padding-bottom: 20px;
+    word-break: break-all
+}
+
+.result-card__meaning {
+    padding-bottom: 5px;
+    word-break: break-all
+}
+
+.result-card__meaning-result {
+    font-size: 48px;
+    word-break: break-word
+}
+
+.classroom-button {
+    text-align: center
+}
+
+.button__wrapper {
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 90px;
+    gap: 10px
+}
+
+.button__row {
+    flex-direction: column;
+    gap: 10px
+}
+
+.result-card__hieroglyphs--large {
+    font-size: 58px
+}
+
+.result-card__hieroglyphs--medium {
+    font-size: 48px
+}
+
+.result-card__hieroglyphs--small {
+    font-size: 29px
+}
+
+.result-card__spelling--large {
+    font-size: 28px
+}
+
+.result-card__spelling--medium {
+    font-size: 20px
+}
+
+.result-card__spelling--small {
+    font-size: 12px
+}
+
+@media (min-width: 700px) {
+    .result-card__image {
+        width:549px;
+        height: 549px
+    }
+
+    .result-card {
+        width: 550px;
+        height: 550px
+    }
+
+    .result-card__hieroglyphs--large {
+        font-size: 108px
+    }
+
+    .result-card__hieroglyphs--medium {
+        font-size: 78px
+    }
+
+    .result-card__hieroglyphs--small {
+        font-size: 48px
+    }
+
+    .result-card__spelling--large {
+        font-size: 48px
+    }
+
+    .result-card__spelling--medium {
+        font-size: 32px
+    }
+
+    .result-card__spelling--small {
+        font-size: 20px
+    }
+
+    .button__wrapper {
+        width: 550px;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .button__row {
+        flex-direction: row
+    }
+}

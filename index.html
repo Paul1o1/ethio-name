@@ -1,0 +1,213 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel='stylesheet' href='stylesheets/normalize.min.css' />
+	<link rel='stylesheet' href='stylesheets/style.min.css' />
+	<link rel='stylesheet' href='stylesheets/colors.min.css' />
+	<link rel='stylesheet' href='stylesheets/name-result.min.css' />
+	<link rel='stylesheet' href='stylesheets/modal.min.css' />
+	<link rel="stylesheet" href="stylesheets/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+	<nav class="navigation d-flex justify-space-between">
+		<a href="index.html">
+		  <img width="100" height="100" src="logo white.jpg" alt="Ethio names logo" />
+		</a>
+	  </nav>
+	<div class="col-md-3"></div>
+	<div class="col-md-6 well">
+		
+		<div id="result" class="display">
+			<div class="rounded result-card">
+				<div class="result-card__image">
+					<div class="result-card__name accent">
+						Your <span class="white">Ethiopian</span> Name
+
+					</div>
+					<div id="result-amharic"
+						class="result-card__hieroglyphs hieroglyphs result-card__hieroglyphs--large">
+						_ _ _
+					</div>
+					<div class="result-card__spelling accent">spelling</div>
+					<div id="result-name"
+						class="result-card__transcription primary spelling result-card__spelling--large"> _ _ _</div>
+					<div class="result-card__meaning accent">meaning</div>
+					<div id="result-meaning"
+						class="result-card__meaning-result primary spelling result-card__spelling--large"> _ _ _ _ _ _
+					</div>
+				</div>
+			</div>
+
+			<div class="button__wrapper d-flex">
+				<div class="d-flex button__row">
+					<a  
+						class="cursor-pointer modal-button button rounded primary view-modal">
+						share
+				</a>
+					<div class="popup">
+						<header>
+						  <span>Share link</span>
+						  <div class="close"><i class="uil uil-times"></i></div>
+						</header>
+						<div class="content">
+						  <p>Share this link via</p>
+						  <ul class="icons">
+							<a href="#"><i class="fab fa-facebook-f"></i></a>
+							<a href="https://twitter.com/intent/tweet?text=Check%20out%20your%20Ethiopian%20Name%20https%3A%2F%2FEthioNames.com"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+							<a href="#"><i class="fab fa-whatsapp"></i></a>
+							<a href="#"><i class="fab fa-telegram-plane"></i></a>
+						  </ul>
+						  <p>Or copy link</p>
+						  <div class="field">
+							<i class="url-icon uil uil-link"></i>
+							<input type="text" readonly value="https//:Ethiopia Names.com">
+							<button>Copy</button>
+						  </div>
+						</div>
+					  </div>
+					<a href="index.html" class="generate-button button rounded primary home-link">
+						generate another name
+					</a>
+				</div>
+
+			</div>
+		</div>
+
+		<div id="form-container" class="container">
+			<!-- <div class="d-flex promo-wrapper">
+				<div class="promo bg-primary rounded d-flex">
+					<div class="d-flex order-lg-2 flex-column">
+						<!-- <div class="promo__text">download Laoshi on your mobile
+                         and learn Chinese words and characters</div> -->
+						<!-- <div class="promo__button-wrapper">
+							<a aria-label="download on the google play" target="_blank"
+								href="https://applinks.laoshi.io/MXL2agukhAb" class="store-logo gplay_btn">
+								<img width="163" height="57" src="assets/google-play.svg" alt="google play button" />
+							</a>
+							<a aria-label="download on app store" target="_blank"
+								href="https://applinks.laoshi.io/MXL2agukhAb" class="store-logo appstore_btn">
+								<img width="163" height="57" src="assets/app-store.svg" alt="apple store button" />
+							</a>
+						</div>
+					</div>
+					<img class="promo__logo" height="135" width="175" src="assets/phone-promo.webp" alt="promo logo" />
+				</div>
+				<div class="promo__qr rounded">
+					<img width="105" height="105" class="qr" src="assets/qr.svg" alt="qr code" />
+					scan to download
+				</div>
+			</div> --> -->
+			<div class="header">
+				 find out
+				what your 
+				  Ethiopian Name is
+				
+				<img width="150" height="100" class="header__eye" src="flag.png" alt="eye logo" />
+			</div>
+			<div class="gender">
+				<div class="card">
+					<div class="title">Pick Gender</div>
+					<div class="form">
+						<label><input id="man" type="radio" class="input-radio off" name="pilih"> Male</label>
+						<label><input id="women" type="radio" class="input-radio on" checked name="pilih">
+							Female</label>
+					</div>
+				</div>
+			</div>
+			<form id="form" onsubmit="generateName();return false" class="d-flex flex-column my-form">
+				<input required class="header__input rounded" type="text" name="name" placeholder="your first name"
+					autocomplete="off">
+				<input type="submit" class="button--submit button bg-primary rounded" value="generate Ethiopian name">
+			</form>
+			<div class="header__subtitle">
+				enter your name in Latin generate a Ethiopian Name, and show you the translation and pronunciation
+				<br />
+
+
+
+				<footer class="footer__wrapper">
+					<div class="footer__subtitle">
+						This is just for fun. If you want a correct Ethiopian Name translation, ask an Ethiopian friend.
+						<br>
+						The Ethiopian Name Generator is an online tool that helps you generate an Ethiopian name based
+						on your
+						preferences.
+					</div>
+
+
+
+
+					<!-- <div class="d-flex d-lg-none promo-wrapper">
+						<div class="promo bg-primary rounded d-flex">
+							<div class="d-flex order-lg-2 flex-column">
+								<div class="promo__text">download Laoshi on your mobile
+									and learn Chinese words and characters</div>
+								<div class="promo__button-wrapper">
+									<a aria-label="download on the google play" target="_blank"
+										href="https://applinks.laoshi.io/MXL2agukhAb" class="store-logo gplay_btn">
+										<img alt="download on the google play" width="163" height="57"
+											src="assets/google-play.svg" />
+									</a>
+									<a aria-label="download on app store" target="_blank"
+										href="https://applinks.laoshi.io/MXL2agukhAb" class="store-logo appstore_btn">
+										<img alt="download on app store" width="163" height="57"
+											src="assets/app-store.svg" />
+									</a>
+								</div>
+							</div>
+							<img alt="laoshi promo" height="135" width="175" class="promo__logo"
+								src="assets/phone-promo.webp" />
+						</div>
+						<div class="promo__qr rounded">
+							<img alt="scan qr" class="qr" src="assets/qr.svg" />
+						</div>
+					</div> -->
+					
+				</footer>
+			</div>
+		</div>
+		
+
+		
+
+
+
+
+				
+	</div>
+	<script src="app.js"></script>
+	<script>
+		const viewBtn = document.querySelector(".view-modal"),
+		popup = document.querySelector(".popup"),
+		close = popup.querySelector(".close"),
+		field = popup.querySelector(".field"),
+		input = field.querySelector("input"),
+		copy = field.querySelector("button");
+		viewBtn.onclick = ()=>{
+		  popup.classList.toggle("show");
+		}
+		close.onclick = ()=>{
+		  viewBtn.click();
+		}
+		copy.onclick = ()=>{
+		  input.select(); //select input value
+		  if(document.execCommand("copy")){ //if the selected text copy
+			field.classList.add("active");
+			copy.innerText = "Copied";
+			setTimeout(()=>{
+			  window.getSelection().removeAllRanges(); //remove selection from document
+			  field.classList.remove("active");
+			  copy.innerText = "Copy";
+			}, 3000);
+		  }
+		}
+	  </script>
+</body>
+
+</html>
