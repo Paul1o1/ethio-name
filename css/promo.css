@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,700');
+
+* {
+  box-sizing: border-box;
+}
+div {
+  padding: 0;
+}
+BODY {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #000000;
+  line-height: 1.8em;
+}
+
+.promo-box-container {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  max-width: 760px;
+  width: 100%;
+  min-height: 225px;
+  background: linear-gradient(#f9daa2,#f9daa2),
+    url("https://placeimg.com/940/300/any")
+      no-repeat 100%;
+  z-index: 1;
+  -webkit-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.promo-box-container .right-triangle {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  height: 100%;
+  width: 50%;
+  background-image: url(../background\ \(3\).jpg);
+  background: linear-gradient(white,white),
+    url()
+      no-repeat 100%;
+  -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+.promo-box-container .linkspanner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.promo-box-container .title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #000;
+  line-height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 36%;
+  margin-right: 8%;
+  margin-top: 0;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+}
+
+.promo-box-container .title a {
+  text-decoration: none;
+  color: #000;
+}
+
+.promo-box-container .title  {
+
+  
+}
+
+.promo-box-container .cta-button {
+  background:#f9daa2 ;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 0.7em;
+  float: right;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  z-index: 99;
+  -o-transition: color 0.5s, background-color 0.5s;
+  -ms-transition: color 0.5s, background-color 0.5s;
+  -moz-transition: color 0.5s, background-color 0.5s;
+  -webkit-transition: color 0.5s, background-color 0.5s;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.promo-box-container .cta-button:hover {
+  color: #000;
+  background-color: #F3A32F;
+}
+span.lighter{
+    display: block;
+    font-weight: 300;
+    line-height: 24px;
+    margin-top: 10px;
+    font-size: 20px;
+    
+  }
+  
+
+@media all and (max-width: 600px) {
+  .promo-box-container {
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+    width: 300px;
+    height: 200px;
+    z-index: 1;
+    color: #000;
+    background: linear-gradient(#f99900,#f99900),
+      url("https://placeimg.com/300/300/any")
+        no-repeat 90%;
+  }
+  .promo-box-container .title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .promo-box-container .title  {
+    font-size: 19px;
+    display: block;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+  span.lighter{
+    display: block;
+    font-weight: 300;
+    line-height: 24px;
+    margin-top: 10px;
+    font-size: 10px;
+    
+  }
+  
+  .promo-box-container .cta-button {
+    font-size: 12px;
+    top: auto;
+  }
+  .promo-box-container .right-triangle {
+    width: 39%;
+    background: linear-gradient(#0e4929,#0e4929 ),
+      url("https://placeimg.com/300/300/any")
+        no-repeat 90%;
+  }
+}

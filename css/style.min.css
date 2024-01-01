@@ -63,7 +63,8 @@ a {
     font-size: 48px;
     line-height: 100%;
     white-space: pre-line;
-    color: #fff
+    color: #fff;
+    height:220px;
 }
 
 .header__subtitle {
@@ -354,6 +355,12 @@ a {
     display: flex;
     justify-content: space-between;
     width: 100%
+}
+@media (min-width: 400px) {
+    .header{
+        height: 300px;
+    }
+
 }
 
 @media (min-width: 700px) {
